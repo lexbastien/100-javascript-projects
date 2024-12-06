@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.image-container {
+    background: url(thumb-1920-597965.jpg);
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    width: 100px;
+    cursor: pointer;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        }
+    50% {
+        transform: translateY(-20px);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}
